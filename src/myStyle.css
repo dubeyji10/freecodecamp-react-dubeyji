@@ -1,0 +1,275 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main div{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.myHeader{
+    display: flex;
+}
+.myHeader div{
+    font-size: 1.31em;
+    display: flex;
+    align-items: center;
+}
+.myHeader div:last-child{
+    margin-left: auto;
+}
+
+.trollFace{
+    height: 60px;
+}
+
+.content{
+    display: grid;
+    grid-gap:10px;
+    text-align: center;
+}
+/* .content div:nth-child(2){
+    margin: auto;
+    background-color: blueviolet;
+
+} */
+.myInput{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.myInput input[type="text"]{
+    font-size: 1.33em;
+    height: 50px;
+    width: 40%;
+    background:rgb(255, 252, 255);
+    border-radius: 8px;
+}
+
+.memeImage{
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    max-height: 500px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid saddlebrown;
+
+}
+.memeImage img{
+    width: 500px;
+    height: 400px;
+}
+
+#memeImage{
+    max-height: 400px;
+    max-width: 500px;
+}
+#memeTitle{
+    /* background-color: black; */
+    bottom: 25.11%;
+}
+
+.newImageButton{
+    cursor: pointer;
+    border-radius: 11px;
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    background-color: blueviolet;
+    line-height: 0px;    
+    font-size: 2rem;
+
+}
+footer{
+    margin-top: 1%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 40px;
+    min-height: 30px;
+    background-color: gold;
+}
+
+@media (max-width:500px)  { /* smartphones, Android phones, landscape iPhone */ 
+    .myHeader{
+        font-size: 0.60rem;
+    }
+    .trollFace{
+        height: 40px;
+    }
+    .newImageButton{
+        background-color: rgb(138, 95, 240);
+        width: 80%;
+        height: 50px;
+        margin: auto;
+        font-size: 0.99em;
+        color: rgb(255, 255, 255);
+    }
+
+    /* … */ 
+}
+
+
+.stateDiv{
+    font-size: 1.77em;
+    color: beige;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.question{
+    display: flex;
+}
+.answer{
+    /* border-radius: 50%; */
+    line-height: 38px;
+    text-align: center;
+    height: 50px;
+    width: 80px;
+    border-radius: 50%;
+    margin-top: auto;
+    color: black;
+    background-color: azure;
+}
+
+.counterCard{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 5% 10% 5%;
+    grid-gap: 0;
+    background-color: rgb(196, 197, 194);
+    font-size: 4em;
+    justify-content: center;
+    /* justify-items: stretch; */
+    text-align: center;
+
+}
+.counterCard div{
+    min-width: 80px;
+    min-height: 70px;
+}
+.minusButton{
+    line-height: 90%;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: aliceblue;
+    color: black;
+}
+.plusButton{
+    line-height: 90%;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: aliceblue;
+    color: black;
+}
+
+/* from w3schools */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 500px;
+    }
+  
+  .image {
+    /* width: 100%; */
+    max-height: 400px;
+    max-width: 50%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    left: 70%;
+    height: 300px;
+    width: 100px;
+    opacity: 0;
+    transition: .2s ease-in-out;
+    background-color: #008CBA;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.items-div{
+    display: grid;
+    grid-template-rows: auto;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(201, 239, 144);
+    font-size: 1.55em;
+    color: black;
+    
+}
+.items-div div{
+    padding: 10px 10px 10px 10px;
+
+}
+.items-div div div:nth-child(even){
+    background-color: aliceblue;
+}
+.add-button{
+    cursor: pointer;
+    user-select: none;
+    border-radius: 11%;
+    background-color: rgb(240, 158, 99);
+}
+.add-button:hover{
+    background-color: rgb(118, 255, 255);
+}
+
+.newContact{
+    cursor: pointer;
+    user-select: none;
+    border-radius: 11%;
+    background-color: rgb(240, 158, 99);
+    text-align: center;
+    width: 200px;
+}
+.isFavourite img{
+    background-color: aliceblue;
+    width: 50px;
+    height: 50px;
+}
+
+.contact-card{
+    text-align: justify;
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap:10px;
+}
+
+.boxes div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid salmon;
+    border-radius: 11px;
+    cursor: pointer;
+    user-select: none;
+}
