@@ -1,3 +1,6 @@
+# Following the course from freeCodeCamp.org
+#### Link [here](https://www.youtube.com/watch?v=bMknfKXIFA8)
+<br><br>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
